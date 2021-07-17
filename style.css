@@ -8,13 +8,15 @@ body{
 ----first page---------*/
 .container{
     display: flex;
-    background-color: rgb(32, 120, 155);
-    width: 100%;
-    height: 100%;
+    background-color: darkblue;
+    width: 1680px;
+    height: 800px;
+
     justify-content: space-around;
 }
 .top p{
     font-size: 60px;
+    color:white;
 }
 .top img{
     height: 500px;
@@ -23,17 +25,19 @@ body{
     margin-top: 50px;
 
 }
-.live{
+.button{
 
-    background-color: orange;
+    background-color: #E02C6D;
     width: 40%;
     padding-left: 17px;
     font-weight: bolder;
     border-radius: 5px;
-    
+    border: solid #E02C6D;
+    height: 35px;
+     
      
 }
-.live a{
+.button a{
     text-decoration: none;
     color: white;
 }
@@ -41,8 +45,7 @@ body{
     background-color: tomato;
 }
 
-/*---------------------
-----first page-end--------*/
+/*==========================next-section=================== */
 
 .box{
     width: 80%;
@@ -73,7 +76,7 @@ body{
 }
 
 .foot{
-    /* background-color:white; */
+    
     height: 400px;
 }
 .foot img{
@@ -103,18 +106,20 @@ margin-top: 120px;
     padding-right: 150px;
     
 }
-.copy-right{
+.copy{
     padding-left: 700px;
     padding-bottom: 150px;
 }
+
 /* -------------------
 ------Media Query----- */
 
-@media  screen and (max-width:688px) {
+
+@media only  screen and (max-width:688px) {
     .container{
-        background-color: green;
+        background-color: darkblue;
         flex-direction: column;
-        width: 94%;
+        width: 100%;
         padding-right: 30px;
         
     }
@@ -124,7 +129,7 @@ margin-top: 120px;
         padding-right: 10px;
     }
     .box{
-        width: 70%;
+        width: 100%;
         height: 5900px;
         align-content: center;
         padding-left: 0;
@@ -132,10 +137,11 @@ margin-top: 120px;
     .box .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-left: 60px;
-        
-        /* align-content: center; */
+        padding-right: 60px;
+        margin-right: 50px;
+       
     }
+
     
 
     .foot{
@@ -152,13 +158,69 @@ margin-top: 120px;
         padding-left: 80px;
         /* display: none; */
     }
-    .copy-right{
+    .copy{
         padding-left: 30px;
         /* display: none; */
     }
     .fa{
 display: flex;
 margin-top: 15px;
+
     } 
 } 
 
+/* =========tab============ */
+
+@media  screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        background-color: darkblue;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 30px;
+        
+    }
+    .container img{
+        width: 89%;
+        height: 80%;
+        padding-right: 10px;
+    }
+    .box{
+        width: 100%;
+        height: 2900px;
+        align-content: center;
+        padding-left: 0;
+    }
+    .box .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 60px;
+        margin-right: 50px;
+       
+    }
+
+   
+
+    .foot{
+        height: 100px;
+        align-content: center;
+    }
+    .foot img{
+        width: 65%;
+        height: 65%;
+        padding-left: 120px;
+    }
+
+    .fa-facebook-square{
+        padding-left: 230px;
+        
+    }
+    .copy{
+        padding-left: 250px;
+       
+    }
+    .fa{
+display: flex;
+margin-top: 25px;
+    } 
+} 
+    
