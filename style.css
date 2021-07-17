@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+/*---------------------
+----first page---------*/
+.container{
+    display: flex;
+    background-color: rgb(32, 120, 155);
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+.top p{
+    font-size: 60px;
+}
+.top img{
+    height: 500px;
+    width: 456px;
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+.live{
+
+    background-color: orange;
+    width: 40%;
+    padding-left: 17px;
+    font-weight: bolder;
+    border-radius: 5px;
+    
+     
+}
+.live a{
+    text-decoration: none;
+    color: white;
+}
+.container:hover{
+    background-color: tomato;
+}
+
+/*---------------------
+----first page-end--------*/
+
+.box{
+    width: 80%;
+    height: 2000px;
+    padding-left: 200px;
+}.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    background-color: white;
+    padding-left: 100px;
+       
+}
+.player img{
+    width: 250px;
+    height: 180px;
+}
+.player{
+    width: 250px;
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    border: 20px solid whitesmoke;
+    margin-top: 50px;
+    
+     
+    
+}
+
+.foot{
+    /* background-color:white; */
+    height: 400px;
+}
+.foot img{
+width: 30%;
+height: 100px;
+padding-left: 500px;
+margin-top: 120px;
+}
+.fa-facebook-square{
+    width: 70px;
+    height: 70px;
+    padding-left: 680px;
+}
+.fa-instagram-square{
+    width: 70px;
+    height: 70px;
+}
+.fa-twitter{
+    width: 70px;
+    height: 70px;
+}
+.fa-youtube{
+    width: 70px;
+    height: 70px;
+}
+.fa{
+    padding-right: 150px;
+    
+}
+.copy-right{
+    padding-left: 700px;
+    padding-bottom: 150px;
+}
+/* -------------------
+------Media Query----- */
+
+@media  screen and (max-width:688px) {
+    .container{
+        background-color: green;
+        flex-direction: column;
+        width: 94%;
+        padding-right: 30px;
+        
+    }
+    .container img{
+        width: 89%;
+        height: 80%;
+        padding-right: 10px;
+    }
+    .box{
+        width: 70%;
+        height: 5900px;
+        align-content: center;
+        padding-left: 0;
+    }
+    .box .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 60px;
+        
+        /* align-content: center; */
+    }
+    
+
+    .foot{
+        height: 100px;
+        align-content: center;
+    }
+    .foot img{
+        width: 50%;
+        height: 50%;
+        padding-left: 50px;
+    }
+
+    .fa-facebook-square{
+        padding-left: 80px;
+        /* display: none; */
+    }
+    .copy-right{
+        padding-left: 30px;
+        /* display: none; */
+    }
+    .fa{
+display: flex;
+margin-top: 15px;
+    } 
+} 
+
